@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-:root {
+:root { 
 
     /* Primary */
     --Bright-orange: hsl(31, 77%, 52%);
@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 100vw;
+    width: 100%;
     min-height: 100vh;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
@@ -40,7 +40,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 60%;
+    width: min(90%, 800px);
     height: 90%;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -119,11 +119,7 @@
 .button:hover {
     color: var(--Very-light-gray);
     border: 2px solid var(--Very-light-gray);
-    transition: all .9s;
-    -webkit-transition: all .9s;
-    -moz-transition: all .9s;
-    -ms-transition: all .9s;
-    -o-transition: all .9s;
+    transition: all .3s;
 }
 .attribution { 
     position: absolute;
